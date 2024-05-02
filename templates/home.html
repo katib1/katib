@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{%block title%} Accueil | Jeu du pendu{% endblock %}</title>
 </head>
 <body>
     {% extends 'layout.html' %}
 
-    {%block title%} Accueil | Jeu du pendu{% endblock %}
-
+    
     {%b lock content %}
         <p>Contenu page d'accueil</p>
+        <a href="/play" name="jouer">Jouer</a>
     {% endblock %}
 </body>
 </html>
