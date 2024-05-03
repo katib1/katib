@@ -1,4 +1,6 @@
-from flask import Flask, render_template, request #on importe ce que l'user a rempli dans la form
+from flask import Flask, render_template, request 
+
+#on importe ce que l'user a rempli dans la form
 
 app = Flask(__name__)
 
@@ -8,7 +10,8 @@ def home():
     return render_template("home.html")
 
 @app.route("/play")
-def play():
+def play_game():
 
 
     return render_template("play.html")
+
